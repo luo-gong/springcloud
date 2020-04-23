@@ -1,0 +1,14 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: register7002
+eureka:
+  instance:
+    hostname: register7002  #eureka服务端的实例名称
+  client:
+    register-with-eureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://register7001:7001/eureka/
+
