@@ -1,14 +1,11 @@
 package lg.cn.controller;
 
-import com.alibaba.druid.support.json.JSONUtils;
-import com.netflix.discovery.converters.Auto;
 import lg.cn.entity.Payment;
 import lg.cn.service.PaymentService;
 import lg.cn.util.CommResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 

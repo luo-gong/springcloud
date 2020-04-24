@@ -1,14 +1,12 @@
 package lg.cn.service.imp;
 
-//import com.netflix.discovery.converters.Auto;
 
-import lg.cn.dao.PaymentMapper;
+import lg.cn.dao.*;
 import lg.cn.entity.Payment;
-import lg.cn.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import lg.cn.service.*;
 
-//import java.util.List;
 
 @Service
 public class PaymentServiceImpl implements PaymentService {
@@ -26,6 +24,5 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public Integer addPayment(Payment payment) {
         return paymentMapper.addPayment(payment);
-
     }
 }
