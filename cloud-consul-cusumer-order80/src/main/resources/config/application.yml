@@ -1,0 +1,13 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: cloud-consul-cusumer-order80
+  cloud:
+    consul:
+      host: 192.168.43.102  #consul注册中心地址
+      port: 8500
+      discovery:
+        hostname: 192.168.43.222 #服务的地址
+        service-name: ${spring.application.name}
+

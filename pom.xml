@@ -16,6 +16,8 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-zookeeper-provider-payment8003</module>
         <module>cloud-zookeeper-consumer-order80</module>
+        <module>cloud-consul-provider-payment8004</module>
+        <module>cloud-consul-cusumer-order80</module>
     </modules>
     <packaging>pom</packaging>
     <name>springcloud</name>
