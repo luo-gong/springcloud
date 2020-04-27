@@ -9,11 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>cloud-commons-api</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>cloud-commons-api</name>
-    <modules>
-        <module>cloud-consul-consumer-order80</module>
-    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -26,4 +23,16 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
