@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
 @RestController
 @Slf4j
 public class PaymentController {
@@ -61,5 +64,14 @@ public class PaymentController {
         } else
             commResult = new CommResult<Payment>(500, "fail");
         return commResult;
+    }
+
+    /**
+     * openfeign超时测试
+     */
+    @GetMapping("/payment/openfeignOutTime")
+    public Object openfeignOutTime() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
+        return UUID.randomUUID();
     }
 }
