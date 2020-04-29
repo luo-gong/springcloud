@@ -7,17 +7,19 @@
     <artifactId>springcloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>cloud-provider-payment8001</module>
-        <module>cloud-consumer-order80</module>
         <module>cloud-commons-api</module>
         <module>register7001</module>
         <module>register7002</module>
+        <module>cloud-provider-payment8001</module>
+        <module>cloud-consumer-order80</module>
         <module>cloud-zookeeper-provider-payment8003</module>
         <module>cloud-provider-payment8002</module>
         <module>cloud-zookeeper-consumer-order80</module>
         <module>cloud-consul-provider-payment8004</module>
         <module>cloud-consul-cusumer-order80</module>
         <module>cloud-openfeign-consumer-order80</module>
+        <module>cloud-hystrix-openfeign-consumer-order80</module>
+        <module>cloud-hystrix-feign-provider-payment8001</module>
     </modules>
     <packaging>pom</packaging>
     <name>springcloud</name>
