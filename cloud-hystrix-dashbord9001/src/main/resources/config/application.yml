@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cloud-hystrix-dashbord9001
+server:
+  port: 9001

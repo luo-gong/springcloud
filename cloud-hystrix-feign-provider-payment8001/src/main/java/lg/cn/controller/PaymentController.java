@@ -33,5 +33,10 @@ public class PaymentController {
         return result;
     }
 
+    //测试服务熔断
+    @GetMapping("circuitBreaker/{id}")
+    public String circuitBreaker(@PathVariable("id") Integer id) {
+        return paymentService.paymentCircuitBreaker(id);
+    }
 
 }

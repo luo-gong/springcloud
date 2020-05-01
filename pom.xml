@@ -20,11 +20,11 @@
         <module>cloud-openfeign-consumer-order80</module>
         <module>cloud-hystrix-openfeign-consumer-order80</module>
         <module>cloud-hystrix-feign-provider-payment8001</module>
+        <module>cloud-hystrix-dashbord9001</module>
+        <module>cloud-gateway-payment9527</module>
     </modules>
     <packaging>pom</packaging>
     <name>springcloud</name>
-
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
