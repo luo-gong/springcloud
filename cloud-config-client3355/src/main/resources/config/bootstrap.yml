@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: cloud-config-client3355
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:3344
+      profile: dev
+      name: application
+  rabbitmq:
+    username: admin
+    password: admin
+    host: 192.168.43.102
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://register7001:7001/eureka/ #单机
+server:
+  port: 3355
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

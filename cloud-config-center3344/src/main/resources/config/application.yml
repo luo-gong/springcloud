@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: cloud-config-center3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/luo-gong/springcloud-config-center.git
+          password: 200027lg
+          username: luo-gong
+      #          search-paths:  #目录
+      #            - application-dev
+      label: master
+  rabbitmq:
+    port: 5672
+    username: admin
+    password: admin
+    host: 192.168.43.102
+server:
+  port: 3344
+eureka:
+  client:
+    service-url:
+      defaultZone: http://register7001:7001/eureka/ #单机
+config:
+  info: cloud-config-center3344
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
